@@ -37,10 +37,14 @@ sns.heatmap(corr_matrix, annot=True, cmap="YlGnBu")
 plt.title("Correlation Matrix Heatmap")
 plt.show()
 
+![image](https://github.com/VincentOracle/Explatory-Data-Analysis-Feature-and-Visualization-using-Spark/assets/104081669/796104a1-9d23-4d30-8cd3-0cc062b71e1d)
+
 # Plot a boxplot of the BMI distribution by Outcome
 sns.boxplot(x="Outcome", y="BMI", data=selected_cols_df.toPandas())
 plt.title("Boxplot of BMI Distribution by Outcome")
 plt.show()
+
+![image](https://github.com/VincentOracle/Explatory-Data-Analysis-Feature-and-Visualization-using-Spark/assets/104081669/323b023b-dee5-4cb2-9b7d-31cd0c3e22a1)
 
 
 # Plot a bar chart of the count of each Outcome value
@@ -48,6 +52,8 @@ outcome_counts = selected_cols_df.groupBy("Outcome").count().toPandas()
 sns.barplot(x="Outcome", y="count", data=outcome_counts)
 plt.title("Bar Chart of Outcome Counts")
 plt.show()
+![image](https://github.com/VincentOracle/Explatory-Data-Analysis-Feature-and-Visualization-using-Spark/assets/104081669/1a86d38c-cdf3-4f8b-a89f-6887b93f303a)
+
 
 ## Methodology
 
